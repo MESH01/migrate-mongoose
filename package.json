@@ -1,12 +1,10 @@
 {
-  "name": "migrate-mongoose",
-  "version": "3.2.2",
+  "name": "@mesh01/migrate-mongoose",
+  "version": "3.2.3",
   "description": "A mongoose based migration framework for node",
   "main": "./dist/lib.js",
   "scripts": {
     "prepublish": "scripts/prepublish.sh",
-    "postpublish": "rm -r ./dist",
-    "postversion": "git push && git push --tags",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
@@ -25,13 +23,15 @@
     "type": "git",
     "url": "https://github.com/balmasi/migrate-mongoose.git"
   },
-  "dependencies": {
+  "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-core": "^6.20.0",
     "babel-plugin-transform-runtime": "^6.15.0",
     "babel-polyfill": "^6.20.0",
     "babel-preset-latest": "^6.16.0",
-    "babel-register": "^6.18.0",
+    "babel-register": "^6.18.0"
+  },
+  "dependencies": {
     "bluebird": "^3.3.3",
     "colors": "^1.1.2",
     "inquirer": "^0.12.0",
