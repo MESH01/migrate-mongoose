@@ -30,10 +30,10 @@ export default function ( collection = 'migrations', dbConnection ) {
     return `${this.createdAt.getTime()}-${this.name}.js`;
   });
 
-  dbConnection.on('error', err => {
+  mongoose.connection.on('error', err => {
     console.error(`MongoDB Connection Error: ${err}`);
   });
 
-  return dbConnection.model( collection, MigrationSchema );
+  return mongoose.model( collection, MigrationSchema );
 }
 
