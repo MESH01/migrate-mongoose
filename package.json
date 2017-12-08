@@ -1,10 +1,10 @@
 {
   "name": "@mesh01/migrate-mongoose",
-  "version": "3.2.5",
+  "version": "3.2.6",
   "description": "A mongoose based migration framework for node",
   "main": "./dist/lib.js",
   "scripts": {
-    "prepublish": "scripts/prepublish.sh",
+    "prepare": "scripts/prepublish.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
