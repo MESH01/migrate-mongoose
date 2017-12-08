@@ -64,7 +64,7 @@ export default class Migrator {
     const defaultTemplate = es6Templates ?  es6Template : es5Template;
     this.template = templatePath ? fs.readFileSync(templatePath, 'utf-8') : defaultTemplate;
     this.migrationPath = path.resolve(migrationsPath);
-    this.connection = connection || mongoose.connect(dbConnectionUri, {useMongoClient: true});
+    this.connection = connection || mongoose.createConnection(dbConnectionUri, {useMongoClient: true});
     this.es6 = es6Templates;
     this.collection = collectionName;
     this.autosync = autosync;
