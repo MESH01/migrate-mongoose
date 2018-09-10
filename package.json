@@ -1,6 +1,6 @@
 {
   "name": "@mesh01/migrate-mongoose",
-  "version": "3.2.7",
+  "version": "3.2.8",
   "description": "A mongoose based migration framework for node",
   "main": "./dist/lib.js",
   "scripts": {
